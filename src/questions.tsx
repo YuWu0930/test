@@ -10,7 +10,7 @@ export const questionData = [
     {
         id:2,
         title: "Frage2",
-        image: "/assets/thumbsUp.png",
+        image: "/assets/thumbsUp.PNG",
         mainQuestion:"2. What do you like the most of the group?",
         subQuestion:"Please input anything you like.",
         license:"https://www.freepik.com/vectors/business"
@@ -18,7 +18,7 @@ export const questionData = [
     {
         id:3,
         title: "Frage3",
-        image: "/assets/dislike.png",
+        image: "/assets/dislike.PNG",
         mainQuestion:"3. What is the thing that you don't like which is happening in the group?",
         subQuestion:"Please input anything you like.",
         license:"https://www.vecteezy.com/free-vector/hate"
@@ -26,7 +26,7 @@ export const questionData = [
     {
         id:4,
         title: "Frage4",
-        image: "/assets/idea.png",
+        image: "/assets/idea.PNG",
         mainQuestion:"4. Is there any idea in mind which can make here a better place ?",
         subQuestion:"Please input anything you like, don't limited your imagination and creation.",
         license:"https://www.vecteezy.com/free-vector/idea"

@@ -54,7 +54,7 @@ const Introduction:React.FC<IProps> = ({userID, setUserID}) => {
         </TitleContainer>
         <ContentContainer>
           <LeftContainer>
-            <Image src="/assets/Introduction.png" />
+            <Image src="/assets/Introduction.PNG" />
           </LeftContainer>
           <RightContainer>
             <TextContainer>
