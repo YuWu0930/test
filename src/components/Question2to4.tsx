@@ -3,6 +3,7 @@ import styled from "styled-components"
 import {Link} from "react-router-dom"
 import {IState as Props} from "../App"
 import db from "../firebase"
+import {screenSize} from "../ScreenSize"
 import { addDoc, collection, setDoc, doc } from "firebase/firestore"; 
 
 interface IProps {
@@ -97,6 +98,9 @@ display:flex;
 flex:6;
 align-items: center;
 justify-content: center;
+@media ${screenSize.mobileL}{
+ display:none;
+}
 `
 const Image = styled.img`
 width:90%;
@@ -110,20 +114,33 @@ align-items: center;
 justify-content: center;
 `
 const QuestionBox = styled.div`
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 width:80%;
 padding:20px;
 background-color:whitesmoke;
 border-radius: 10px;
 border:none;
 box-shadow: 2px 2px 3px 3px gray;
+@media ${screenSize.mobileL}{
+ padding:20px;
+}
 `
 
 const TextMain = styled.p`
 font-size:25px;
 font-weight:bold;
+@media ${screenSize.mobileL}{
+ font-size:20px
+}
 `
 const Text = styled.p`
 font-size:20px;
+@media ${screenSize.mobileL}{
+ font-size:15px
+}
 `
 const AnswerField = styled.textarea`
 margin-top:20px;
@@ -136,6 +153,9 @@ border:none;
 box-shadow: 2px 2px 3px 3px gray;
 font-size:20px;
 resize:none;
+@media ${screenSize.mobileL}{
+ font-size:15px
+}
 `
 
 const ButtonNext = styled.button`
@@ -153,5 +173,9 @@ font-size:20px;
     color:whitesmoke;
     font-size:25px;
     font-weight:bold;
+}
+
+@media ${screenSize.mobileL}{
+ margin-top:20px;
 }
 `

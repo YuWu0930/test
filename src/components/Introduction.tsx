@@ -5,6 +5,7 @@ import * as uuid from 'uuid'
 import {IState as Props} from "../App"
 import db from "../firebase"
 import { addDoc, collection, setDoc, doc } from "firebase/firestore"; 
+import {screenSize} from "../ScreenSize"
 
 
 interface IProps {
@@ -77,6 +78,7 @@ display: flex;
 flex-direction:row;
 align-items:center;
 justify-content: center;
+
 `
 const Image = styled.img`
 width:95%;
@@ -85,11 +87,15 @@ width:95%;
 const ContentContainer = styled.div`
 display:flex;
 flex-direction:row;
-
 width:100vw;
 height:calc(100vh - 200px);
 border-radius:10px;
 border:none;
+
+@media ${screenSize.mobileS}{
+ align-items: center;
+ justify-content: center;
+}
 `
 const LeftContainer = styled.div`
 display:flex;
@@ -97,12 +103,21 @@ flex:6;
 align-items: center;
 justify-content: center;
 
+@media ${screenSize.mobileS}{
+ display:none; 
+}
+
 `
 const RightContainer = styled.div`
 display:flex;
 flex:6;
 align-items: center;
 justify-content: center;
+@media ${screenSize.mobileS}{
+  flex:1;
+  padding:10px;
+  height:90vh;
+}
 `
 const TextContainer = styled.div`
 display:flex;

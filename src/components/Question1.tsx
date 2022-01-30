@@ -4,6 +4,7 @@ import {Link} from "react-router-dom"
 import {IState as Props} from "../App"
 import db from "../firebase"
 import { addDoc, collection, setDoc, doc } from "firebase/firestore"; 
+import {screenSize} from "../ScreenSize"
 
 
 interface IProps {
@@ -116,18 +117,30 @@ border:none;
 border-radius: 10px;
 box-shadow: 2px 2px 10px 2px gray;
 padding:30px;
+@media ${screenSize.mobileL}{
+ height:50vh;
+}
 `
 const QuestionContainer = styled.div`
 flex:4;
 display:flex;
 flex-direction: column;
+@media ${screenSize.mobileL}{
+ flex:1;
+}
 `
 const TextMain = styled.p`
 font-size:25px;
 font-weight:bold;
+@media ${screenSize.mobileL}{
+ font-size:20px;
+}
 `
 const Text = styled.p`
 font-size:20px;
+@media ${screenSize.mobileL}{
+ font-size:15px;
+}
 `
 
 const AnswerContainer = styled.div`
@@ -135,6 +148,11 @@ flex:8;
 display:flex;
 flex-direction:row;
 width:100%;
+
+@media ${screenSize.mobileS}{
+ padding:5px;
+ flex:1;
+}
 `
 const EmojieConntainer = styled.button`
 display:flex;
@@ -148,9 +166,17 @@ background-color:whitesmoke;
     background-color:lightgreen;
     cursor:pointer;
 }
+@media ${screenSize.mobileS}{
+ width:60px;
+ height:60px;
+ margin:5px;
+}
 `
 const Emojie = styled.img`
-
+@media ${screenSize.mobileS}{
+ width:40px;
+ height:40px;
+}
 `
 
 const ButtonNext = styled.button`

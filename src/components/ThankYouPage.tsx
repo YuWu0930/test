@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-
+import {screenSize} from "../ScreenSize"
 import styled from "styled-components"
 import {Link,useNavigate} from "react-router-dom"
 
@@ -19,7 +19,9 @@ const ThankYouPage:React.FC = () => {
 
     return (
       <IntroductionContainer>
-      <h2>Navigate to home page in: {countDown}</h2>
+        <TitleContainer>
+          <h2>Navigate to home page in: {countDown}</h2>
+        </TitleContainer>
         <ContentContainer>
           <LeftContainer>
             <Image src="https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/thankYou.png" />
@@ -28,13 +30,13 @@ const ThankYouPage:React.FC = () => {
             <TextContainer>
               <h1>Vielen Dank,</h1>
               <Text>
-                Viven say something thankful for the kids.
+                Thank you kids for helping doing this interview! i'll buy you
+                some good sweets.
               </Text>
               <Text>Viel Spaß euch</Text>
             </TextContainer>
           </RightContainer>
         </ContentContainer>
-        
       </IntroductionContainer>
     );
 }
@@ -47,13 +49,14 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 height:100vh;
-
 `
+
 const TitleContainer = styled.div`
 display: flex;
 flex-direction:row;
 align-items:center;
 justify-content: center;
+margin:20px;
 `
 const Image = styled.img`
 width:80%;
@@ -62,7 +65,8 @@ width:80%;
 const ContentContainer = styled.div`
 display:flex;
 flex-direction:row;
-
+align-items: center;
+justify-items: center;
 width:100vw;
 height:calc(100vh - 200px);
 border-radius:10px;
@@ -73,13 +77,19 @@ display:flex;
 flex:6;
 align-items: center;
 justify-content: center;
+@media ${screenSize.mobileL}{
+ display:none;
+}
 
 `
 const RightContainer = styled.div`
 display:flex;
+align-items: center;
+justify-content: center;
 flex:6;
 align-items: center;
 justify-content: center;
+
 `
 const TextContainer = styled.div`
 display:flex;
@@ -93,6 +103,11 @@ width:80%;
 height:50%;
 box-shadow: 0px 2px 5px 5px gray;
 background-color:whitesmoke;
+
+@media ${screenSize.mobileL}{
+ padding:10px;
+}
+
 `
 const Text = styled.p`
 font-size:20px;
