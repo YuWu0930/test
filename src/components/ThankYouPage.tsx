@@ -22,7 +22,7 @@ const ThankYouPage:React.FC = () => {
       <h2>Navigate to home page in: {countDown}</h2>
         <ContentContainer>
           <LeftContainer>
-            <Image src="/assets/thankYou.png" />
+            <Image src="https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/thankYou.png" />
           </LeftContainer>
           <RightContainer>
             <TextContainer>
