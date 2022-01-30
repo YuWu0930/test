@@ -61,7 +61,7 @@ const Question1:React.FC<IProps> = ({userID, setUserID}) => {
                   : { backgroundColor: "" }
               }
             >
-              <Emojie src="assets/happy.png" />
+              <Emojie src="https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/happy.png" />
             </EmojieConntainer>
             <EmojieConntainer
               onClick={() => handleClick("soso")}
@@ -71,7 +71,7 @@ const Question1:React.FC<IProps> = ({userID, setUserID}) => {
                   : { backgroundColor: "" }
               }
             >
-              <Emojie src="assets/soso.png" />
+              <Emojie src="https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/soso.png" />
             </EmojieConntainer>
             <EmojieConntainer
               onClick={() => handleClick("sad")}
@@ -81,7 +81,7 @@ const Question1:React.FC<IProps> = ({userID, setUserID}) => {
                   : { backgroundColor: "" }
               }
             >
-              <Emojie src="assets/sad.png" />
+              <Emojie src="https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/sad.png" />
             </EmojieConntainer>
           </AnswerContainer>
           <Link to="/question2" onClick={handleNextUpdate}>

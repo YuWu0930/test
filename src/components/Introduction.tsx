@@ -20,19 +20,6 @@ const Introduction:React.FC<IProps> = ({userID, setUserID}) => {
   const handleClick = async() => {
 
     try {
-      // const docRef = await addDoc(collection(db, "users"), {
-      //   id: "",
-      //   question1: "",
-      //   question2: "",
-      //   question3: "",
-      //   question4: "",
-      // });
-      
-      // setUserID({
-      //   id:docRef.id
-      // })
-
-      // console.log(userID)
       const colRef = collection(db, "users")
       const currentID = uuid.v4()
       setDoc(doc(colRef, currentID), {
@@ -54,7 +41,7 @@ const Introduction:React.FC<IProps> = ({userID, setUserID}) => {
         </TitleContainer>
         <ContentContainer>
           <LeftContainer>
-            <Image src="/assets/Introduction.PNG" />
+            <Image src="https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/Introduction.png" />
           </LeftContainer>
           <RightContainer>
             <TextContainer>
