@@ -38,7 +38,7 @@ function App() {
         width: "100vw",
       }}
     >
-      <BrowserRouter>
+      <BrowserRouter basename='/test'>
         <Routes>
           <Route
             path="/"
