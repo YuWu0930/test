@@ -43,6 +43,7 @@ const Question2to4:React.FC<IProps> = ({data,userInput,setUserInput, userID}) =>
         <ContentContainer>
           <LeftContainer>
             <Image src={`${data.image}`} />
+            <a href={data.license}  style={{color:"black", fontSize:"5px", zIndex:1}}>{data.licenseText}</a>
           </LeftContainer>
           <RightContainer>
             <QuestionBox>
@@ -94,16 +95,18 @@ border-radius:10px;
 border:none;
 `
 const LeftContainer = styled.div`
-display:flex;
-flex:6;
-align-items: center;
-justify-content: center;
-@media ${screenSize.mobileL}{
- display:none;
-}
-`
+  display: none;
+  @media ${screenSize.tablet} {
+    display: flex;
+    flex: 6;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+`;
 const Image = styled.img`
 width:90%;
+
 `
 
 const RightContainer = styled.div`
@@ -124,22 +127,19 @@ background-color:whitesmoke;
 border-radius: 10px;
 border:none;
 box-shadow: 2px 2px 3px 3px gray;
-@media ${screenSize.mobileL}{
- padding:20px;
-}
 `
 
 const TextMain = styled.p`
-font-size:25px;
+font-size:20px;
 font-weight:bold;
-@media ${screenSize.mobileL}{
- font-size:20px
+@media ${screenSize.tablet}{
+ font-size:25px
 }
 `
 const Text = styled.p`
-font-size:20px;
-@media ${screenSize.mobileL}{
- font-size:15px
+font-size:15px;
+@media ${screenSize.tablet}{
+ font-size:20px
 }
 `
 const AnswerField = styled.textarea`
@@ -151,10 +151,10 @@ background-color:white;
 border-radius: 10px;
 border:none;
 box-shadow: 2px 2px 3px 3px gray;
-font-size:20px;
+font-size:15px;
 resize:none;
-@media ${screenSize.mobileL}{
- font-size:15px
+@media ${screenSize.tablet}{
+ font-size:20px
 }
 `
 
@@ -166,7 +166,7 @@ border-radius:10px;
 box-shadow: 0px 0px 5px 5px green;
 background-color:white;
 font-size:20px;
-
+margin-top:20px;
 &:hover{
     cursor:pointer;
     background-color:green;
@@ -175,7 +175,7 @@ font-size:20px;
     font-weight:bold;
 }
 
-@media ${screenSize.mobileL}{
- margin-top:20px;
+@media ${screenSize.tablet}{
+ margin-top:30px;
 }
 `

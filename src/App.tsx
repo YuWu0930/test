@@ -5,7 +5,6 @@ import Question1 from "./components/Question1"
 import Question2 from "./components/Question2"
 import Question3 from "./components/Question3"
 import Question4 from "./components/Question4"
-import Test from "./components/Test"
 import ThankYouPage from './components/ThankYouPage';
 
 
@@ -16,7 +15,8 @@ export interface IState{
       image:string,
       mainQuestion:string,
       subQuestion:string,
-      license:string
+      license:string,
+      licenseText:string
   }
   userID:{
     id:string
@@ -61,6 +61,7 @@ function App() {
                   mainQuestion: "",
                   subQuestion: "",
                   license: "",
+                  licenseText:""
                 }}
               />
             }
@@ -77,6 +78,7 @@ function App() {
                   mainQuestion: "",
                   subQuestion: "",
                   license: "",
+                  licenseText:""
                 }}
               />
             }
@@ -93,28 +95,12 @@ function App() {
                   mainQuestion: "",
                   subQuestion: "",
                   license: "",
+                  licenseText:""
                 }}
               />
             }
           />
-          <Route
-            path="/test"
-            element={
-              <Test
-                questionData={{
-                  id: 0,
-                  title: "",
-                  image: "",
-                  mainQuestion: "",
-                  subQuestion: "",
-                  license: "",
-                }}
-                userID={{
-                  id: "",
-                }}
-              />
-            }
-          />
+          
           <Route path="/thankyou" element={<ThankYouPage />} />
         </Routes>
         {/* <NavBar /> */}

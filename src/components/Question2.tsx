@@ -21,7 +21,8 @@ const Question2:React.FC<IProps> = ({userID, setUserID}) => {
     image:"",
     mainQuestion:"",
     subQuestion:"",
-    license:""
+    license:"",
+    licenseText:""
   })
 
   useEffect(()=> {

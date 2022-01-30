@@ -11,7 +11,8 @@ const Question3: React.FC<Props> = ({userID}) => {
     image:"",
     mainQuestion:"",
     subQuestion:"",
-    license:""
+    license:"",
+    licenseText:"",
   })
 
   useEffect(()=> {

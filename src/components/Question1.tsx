@@ -112,72 +112,78 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 width:60%;
-height:500px;
+height:50vh;
 border:none;
 border-radius: 10px;
 box-shadow: 2px 2px 10px 2px gray;
 padding:30px;
-@media ${screenSize.mobileL}{
- height:50vh;
+
+@media ${screenSize.tablet}{
+ height:100%;
 }
 `
 const QuestionContainer = styled.div`
-flex:4;
+flex:1;
 display:flex;
 flex-direction: column;
-@media ${screenSize.mobileL}{
- flex:1;
+
+@media ${screenSize.tablet}{
+ flex:4;
 }
 `
 const TextMain = styled.p`
-font-size:25px;
+font-size:20px;
 font-weight:bold;
-@media ${screenSize.mobileL}{
- font-size:20px;
+@media ${screenSize.tablet}{
+ font-size:25px;
 }
 `
 const Text = styled.p`
-font-size:20px;
-@media ${screenSize.mobileL}{
- font-size:15px;
+font-size:15px;
+@media ${screenSize.tablet}{
+ font-size:20px;
 }
 `
 
 const AnswerContainer = styled.div`
-flex:8;
+flex:1;
 display:flex;
 flex-direction:row;
 width:100%;
-
-@media ${screenSize.mobileS}{
- padding:5px;
- flex:1;
+padding:5px;
+@media ${screenSize.tablet}{
+ padding:none;
+ flex:8;
 }
 `
 const EmojieConntainer = styled.button`
-display:flex;
-flex:4;
-align-items:center;
-justify-content:center;
-border-radius:10px;
-margin:20px;
-background-color:whitesmoke;
-&:hover{
-    background-color:lightgreen;
-    cursor:pointer;
-}
-@media ${screenSize.mobileS}{
- width:60px;
- height:60px;
- margin:5px;
-}
-`
+  display: flex;
+  flex: 4;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: whitesmoke;
+  width: 80px;
+  height: 80px;
+  margin: 5px;
+  &:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+  }
+
+  @media ${screenSize.tablet} {
+    height:150px;
+  }
+`;
 const Emojie = styled.img`
-@media ${screenSize.mobileS}{
- width:40px;
- height:40px;
-}
-`
+  width: 40px;
+  height: 40px;
+  @media ${screenSize.tablet} {
+    width:60px;
+    height:60px;
+  }
+`;
 
 const ButtonNext = styled.button`
 width:100px;
@@ -194,5 +200,8 @@ font-size:20px;
     color:whitesmoke;
     font-size:25px;
     font-weight:bold;
+}
+@media ${screenSize.tablet}{
+  margin-top:30px;
 }
 `

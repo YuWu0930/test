@@ -20,11 +20,12 @@ const ThankYouPage:React.FC = () => {
     return (
       <IntroductionContainer>
         <TitleContainer>
-          <h2>Navigate to home page in: {countDown}</h2>
+          <h2>Back to home in: {countDown}</h2>
         </TitleContainer>
         <ContentContainer>
           <LeftContainer>
             <Image src="https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/thankYou.png" />
+            <a href="http://www.freepik.com"  style={{color:"black", fontSize:"5px", zIndex:1}}>Designed by slidesgo / Freepik</a>
           </LeftContainer>
           <RightContainer>
             <TextContainer>
@@ -73,15 +74,15 @@ border-radius:10px;
 border:none;
 `
 const LeftContainer = styled.div`
-display:flex;
-flex:6;
-align-items: center;
-justify-content: center;
-@media ${screenSize.mobileL}{
- display:none;
-}
-
-`
+  display: none;
+  @media ${screenSize.tablet} {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    align-items: center;
+    justify-content: center;
+  }
+`;
 const RightContainer = styled.div`
 display:flex;
 align-items: center;
@@ -96,7 +97,7 @@ display:flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-padding:20px;
+padding:10px;
 border:none;
 border-radius: 10px;
 width:80%;
@@ -104,28 +105,14 @@ height:50%;
 box-shadow: 0px 2px 5px 5px gray;
 background-color:whitesmoke;
 
-@media ${screenSize.mobileL}{
- padding:10px;
+@media ${screenSize.tablet}{
+ padding:20px;
 }
 
 `
 const Text = styled.p`
-font-size:20px;
-`
-const ButtonStart = styled.button`
-width:100px;
-height:30px;
-border:none;
-border-radius:10px;
-box-shadow: 0px 0px 5px 5px green;
-background-color:white;
-font-size:20px;
-
-&:hover{
-    cursor:pointer;
-    background-color:green;
-    color:whitesmoke;
-    font-size:25px;
-    font-weight:bold;
-}
-`
+  font-size: 15px;
+  @media ${screenSize.tablet} {
+    font-size: 20px;
+  }
+`;

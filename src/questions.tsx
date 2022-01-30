@@ -5,7 +5,8 @@ export const questionData = [
         image: "",
         mainQuestion:"1. How do you feel right now in the group?",
         subQuestion:"Here are three emojies, please select one which can represent your current feeling.",
-        license:""
+        license:"",
+        licenseText:""
     },
     {
         id:2,
@@ -13,7 +14,8 @@ export const questionData = [
         image: "https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/thumbsUp.png",
         mainQuestion:"2. What do you like the most of the group?",
         subQuestion:"Please input anything you like.",
-        license:"https://www.freepik.com/vectors/business"
+        license:"https://www.freepik.com/vectors/business",
+        licenseText:"Business vector created by jcomp - www.freepik.com"
     },
     {
         id:3,
@@ -21,7 +23,8 @@ export const questionData = [
         image: "https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/dislike.png",
         mainQuestion:"3. What is the thing that you don't like which is happening in the group?",
         subQuestion:"Please input anything you like.",
-        license:"https://www.vecteezy.com/free-vector/hate"
+        license:"https://www.vecteezy.com/free-vector/hate",
+        licenseText:"Hate Vectors by Vecteezy"
     },
     {
         id:4,
@@ -29,6 +32,7 @@ export const questionData = [
         image: "https://raw.githubusercontent.com/YuWu0930/test/gh-pages/assets/idea.png",
         mainQuestion:"4. Is there any idea in mind which can make here a better place ?",
         subQuestion:"Please input anything you like, don't limited your imagination and creation.",
-        license:"https://www.vecteezy.com/free-vector/idea"
+        license:"https://www.vecteezy.com/free-vector/idea",
+        licenseText:"Idea Vectors by Vecteezy"
     }
 ]
