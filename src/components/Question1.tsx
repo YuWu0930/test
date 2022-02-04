@@ -47,11 +47,8 @@ const Question1:React.FC<IProps> = ({userID, setUserID}) => {
         <h1>Frage 1</h1>
         <QuestionCard>
           <QuestionContainer>
-            <TextMain>1. How do you feel right now in the group? </TextMain>
-            <Text>
-              Here are three emojies, please select one which can represent your
-              current feeling.
-            </Text>
+            <TextMain>1. Wie fühlst du dich gerade auf der Gruppe?</TextMain>
+            <Text>Wähle dazu einen der drei Smileys aus.</Text>
           </QuestionContainer>
           <AnswerContainer>
             <EmojieConntainer

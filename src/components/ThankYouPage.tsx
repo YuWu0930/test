@@ -20,7 +20,7 @@ const ThankYouPage:React.FC = () => {
     return (
       <IntroductionContainer>
         <TitleContainer>
-          <h2>Back to home in: {countDown}</h2>
+          <h2>zurück auf die Startseite: {countDown}</h2>
         </TitleContainer>
         <ContentContainer>
           <LeftContainer>
@@ -31,8 +31,7 @@ const ThankYouPage:React.FC = () => {
             <TextContainer>
               <h1>Vielen Dank,</h1>
               <Text>
-                Thank you kids for helping doing this interview! i'll buy you
-                some good sweets.
+                fürs teilnehmen. Ich hoffe euch hat die Umfrage gefallen und ihr konntet euch ein bisschen miteinbringen.
               </Text>
               <Text>Viel Spaß euch</Text>
             </TextContainer>

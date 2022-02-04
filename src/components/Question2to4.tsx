@@ -29,7 +29,7 @@ const Question2to4:React.FC<IProps> = ({data,userInput,setUserInput, userID}) =>
       await setDoc(
         doc(colRef, `${userID.id}`),
         {
-          [title] : `${data.title} : ${userInput}`,
+          [title] : userInput,
         },
         {merge:true}
       );
@@ -105,8 +105,7 @@ const LeftContainer = styled.div`
   }
 `;
 const Image = styled.img`
-width:90%;
-
+width:85%;
 `
 
 const RightContainer = styled.div`
